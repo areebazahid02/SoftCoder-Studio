@@ -509,7 +509,7 @@ nav ul li a:hover::after{
 
     .container{
         width:90%;
-        padding:10px 0;
+        padding:10px 5%;
         margin:auto;
     }
 
@@ -521,7 +521,7 @@ nav ul li a:hover::after{
     }
 
     nav{
-        padding:10px 0;
+        position:relative;
     }
 
     nav img{
@@ -533,8 +533,8 @@ nav ul li a:hover::after{
 
     nav ul{
         
-    position:fixed;
-    top:0px;
+    position:absolute;
+    top:100%;
     left:0;
     width:100%;
     height: 0;
@@ -545,9 +545,10 @@ nav ul li a:hover::after{
     align-items:center;
     overflow:hidden;
     transition:0.4s ease;
-    z-index: 100;
+    z-index: 1000;
 }
 nav ul li{
+    display: block;
   margin: 20px 0;
 }
 nav.open ul{
