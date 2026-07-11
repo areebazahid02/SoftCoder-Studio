@@ -509,8 +509,7 @@ nav ul li a:hover::after{
 
     .container{
         width:90%;
-        padding:10px 5%;
-        margin:auto;
+        padding:10px 2%;
     }
 
 
@@ -525,14 +524,20 @@ nav ul li a:hover::after{
     }
 
     nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position:relative;
+        padding:10 0;
     }
 
     nav img{
         width:60px;
         height:60px;
-        position: relative;
-        z-index: 201;
+       
+    }
+    .logo span{
+        font-size: 20px;
     }
 
     nav ul{
@@ -545,18 +550,17 @@ nav ul li a:hover::after{
     background:#0e2727;
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-items:center;
     overflow:hidden;
     transition: max-height 0.4s ease;
-    z-index: 1000;
+    z-index: 999;
 }
 nav ul li{
     display: block;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 nav.open ul{
-    max-height: 350px;
+    max-height:400px;
     padding:20px 0;
 }
 .menu-bar{
