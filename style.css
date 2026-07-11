@@ -517,7 +517,11 @@ nav ul li a:hover::after{
     /* Header */
     #header{
         height:100vh;
-        background-position:center;
+        height: auto;
+        background-position:center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 40px;
     }
 
     nav{
